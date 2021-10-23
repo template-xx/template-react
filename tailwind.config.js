@@ -1,16 +1,15 @@
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
   purge: [
     './src/components/**/*.js',
     './src/layouts/**/*.js',
     './src/pages/**/*.js'
   ],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
   },
-  variants: {},
-  plugins: []
+  variants: {
+    extend: {},
+  },
+  plugins: [],
 }
