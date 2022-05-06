@@ -1,15 +1,9 @@
 module.exports = {
-  purge: [
-    './src/components/**/*.js',
-    './src/layouts/**/*.js',
-    './src/pages/**/*.js'
+  content: [
+    './src/**/*.jsx' // prettier-ignore
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {}
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+  plugins: []
 }
