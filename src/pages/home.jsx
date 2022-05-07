@@ -1,5 +1,7 @@
 import DefaultLayout from '../layouts/default'
 
 export default function HomePage() {
-  return <DefaultLayout page={{ title: 'Home' }}>__HomePage__</DefaultLayout>
+  const title = 'Home'
+
+  return <DefaultLayout page={{ title }}>HomePage</DefaultLayout>
 }
