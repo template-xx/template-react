@@ -1,6 +1,5 @@
 import { createStoreon } from 'storeon'
 import { storeonLogger } from 'storeon/devtools'
-import { persistState } from '@storeon/localstorage'
 import token from './states/token'
 import user from './states/user'
 
@@ -14,6 +13,5 @@ export default createStoreon([
   // setting,
   token,
   user,
-  logger,
-  persistState(['token'])
+  logger
 ])
