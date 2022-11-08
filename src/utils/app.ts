@@ -4,7 +4,7 @@ import { render } from 'react-dom'
 export function createApp(app, props) {
   const component = createElement(app, props, null)
 
-  function mount(identifier) {
+  function mount(identifier: string) {
     const appId = identifier.replace(/#/, '')
     const appEl = document.getElementById(appId)
 
