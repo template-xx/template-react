@@ -1,3 +1,5 @@
+import type { StoreonStore } from 'storeon'
+
 function init() {
   return {
     me: null,
@@ -17,7 +19,7 @@ function fetch(_, users) {
   }
 }
 
-export default (store) => {
+export default (store: StoreonStore) => {
   store.on('@init', init)
   store.on('users/me', me)
   store.on('users/fetch', fetch)
