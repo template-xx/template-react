@@ -14,7 +14,7 @@ export default function Logo({ title = 'Logo', src }: LogoProps) {
           <img alt={title} src={src} />
         </Then>
         <Else>
-          <span className="font-medium px-2">{title}</span>
+          <span className="font-medium text-slate-900 px-2">{title}</span>
         </Else>
       </If>
     </Link>

@@ -5,7 +5,7 @@ export default function Header() {
     <header>
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-between">
-          <Logo src="/logo.svg" />
+          <Logo title="shih-ching" />
         </div>
       </div>
     </header>
