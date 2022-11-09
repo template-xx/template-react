@@ -1,11 +1,14 @@
 import { Link } from 'react-router-dom'
 
-export default function Logo() {
+interface LogoProps {
+  title: string
+  src?: string
+}
+
+export default function Logo({ title = 'Logo', src }: LogoProps) {
   return (
-    <div className="flex items-center">
-      <Link className="flex items-center h-14" to="/">
-        <span className="font-medium mx-4">Logo</span>
-      </Link>
-    </div>
+    <Link className="flex items-center h-14" to="/">
+      <span className="font-medium px-2">{title}</span>
+    </Link>
   )
 }
