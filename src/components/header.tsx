@@ -5,7 +5,7 @@ export default function Header() {
     <header>
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-between">
-          <Logo title="template-react" />
+          <Logo src="/logo.svg" />
         </div>
       </div>
     </header>
