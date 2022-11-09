@@ -3,7 +3,6 @@ import Center from '../components/center'
 
 export default function NotFoundPage() {
   const title = '抱歉，没有找到对应的页面'
-
   return (
     <DefaultLayout page={{ title }}>
       <Center height="calc(100vh - 100px)">
