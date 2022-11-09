@@ -1,7 +1,5 @@
 import type { ReactNode } from 'react'
 import { Helmet } from 'react-helmet'
-import Header from '../components/header'
-import Footer from '../components/footer'
 
 interface LayoutProps {
   page: Record<string, any>
@@ -14,11 +12,7 @@ export default function DefaultLayout({ page, children }: LayoutProps) {
       <Helmet>
         <title>{page?.title}</title>
       </Helmet>
-      <div className="min-h-screen">
-        <Header />
-        {children}
-        <Footer copyright={null} />
-      </div>
+      <div className="min-h-screen">{children}</div>
     </>
   )
 }
