@@ -2,13 +2,10 @@
   "name": "@tosslate/react",
   "version": "1.0.1",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "fmt:check": "prettier src --check",
-    "fmt:update": "prettier src --write"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@storeon/localstorage": "^1.5.0",

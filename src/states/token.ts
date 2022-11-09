@@ -9,7 +9,7 @@ function init() {
   }
 }
 
-function fetch(_, { access_token, refresh_token }) {
+function fetch(_: unknown, { access_token, refresh_token }) {
   return {
     token: {
       access_token,

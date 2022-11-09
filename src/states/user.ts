@@ -7,13 +7,13 @@ function init() {
   }
 }
 
-function me(_, me) {
+function me(_: unknown, me: Record<string, any>) {
   return {
     me
   }
 }
 
-function fetch(_, users) {
+function fetch(_: unknown, users: any[]) {
   return {
     users
   }
