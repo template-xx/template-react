@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { If, Then, Else } from 'react-if'
 
 interface LogoProps {
-  title?: string
+  title: string
   src?: string
 }
 
