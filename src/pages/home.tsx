@@ -23,7 +23,7 @@ export default function HomePage() {
             <Loader />
           </Then>
           <Else>
-            <div className="flex items-center divide-x divide-zinc-500">
+            <div className="flex items-center divide-x divide-zinc-500 p-6">
               <h3 className="text-2xl text-zinc-700 pr-4">👋</h3>
               <p className="text-zinc-700 pl-4 py-2">
                 {data?.content[random(data.length - 1)]}
