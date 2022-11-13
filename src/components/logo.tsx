@@ -2,13 +2,18 @@ import { Link } from 'react-router-dom'
 import { If, Then, Else } from 'react-if'
 
 interface LogoProps {
+  className: string
   title: string
   src?: string
 }
 
-export default function Logo({ title = 'Logo', src }: LogoProps) {
+export default function Logo({
+  className = '',
+  title = 'Logo',
+  src
+}: LogoProps) {
   return (
-    <Link className="flex items-center h-14" to="/">
+    <Link className={`flex items-center h-14 ${className}`} to="/">
       <If condition={src}>
         <Then>
           <img alt={title} src={src} />

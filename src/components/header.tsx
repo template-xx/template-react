@@ -5,9 +5,7 @@ export default function Header() {
     <header>
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-between">
-          <div className="ml-6">
-            <Logo title="随机诗词" />
-          </div>
+          <Logo className="ml-6" title="随机诗词" />
         </div>
       </div>
     </header>
