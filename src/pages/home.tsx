@@ -25,8 +25,10 @@ export default function HomePage() {
           <Else>
             <div className="flex items-center divide-x divide-zinc-300 p-6">
               <h3 className="text-2xl text-zinc-600 pr-4">👋</h3>
-              <p className="text-zinc-600 pl-4 py-2">
-                {data?.content[random(data.length - 1)]}
+              <p className="text-zinc-600 leading-relaxed pl-4 py-2">
+                <span className="duration-200 ease-in-out transition-[background-size] bg-gradient-to-r from-sky-300 to-lime-300 bg-left-bottom bg-no-repeat bg-[length:0px_2px] hover:bg-[length:100%_2px]">
+                  {data?.content[random(data.length - 1)]}
+                </span>
               </p>
             </div>
           </Else>
